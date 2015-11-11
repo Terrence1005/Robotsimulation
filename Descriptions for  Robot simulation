@@ -1,0 +1,19 @@
+                Descriptions for C++ final project
+Our team has chosen the project topic which is robot simulation. The idea is that there are some virtual
+robots used to explore an unknown terrain. The robot starts with a vague information about the surroundings,
+and as the robot goes around it learns more about the environment it refines its information regarding where 
+it can go and cannot go. We design the specific test environment based on the 2D-coordinate system, therefore, 
+we can get the location as the coordinate form at all the time. In addition, we will add some obstacles randomly. 
+The robot we designed have a test range regard to the radius of r which have three zones. When the robot meet 
+the obstacle, it can automatically recognize that and give back the obstacle information in the first zone, 
+alert in the second zone and finally change direction in the third zone. Also when two robots meet with each other, 
+they can take action to avoid collision. However, the direction of turning is depending on what we have set, 
+and it can be changed to what we need. All in all, in our assumption, 
+the robot can move to any place with different speeds except running into obstacles, meanwhile, 
+it can feedback its location information.
+The project can achieve the function as following:
+1. Set the robot speed and size at the any time.
+2. Build the 2D- coordinate as the test environment.
+3. Get the robot location when it meets the obstacle and moves free.
+4. Change the turning ways freely. 
+ 
