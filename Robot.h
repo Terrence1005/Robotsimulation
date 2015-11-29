@@ -14,17 +14,17 @@ public:
     ~Robot();
     void robot_move(int& x,int& y,double& s,double& th);
     //move the robot at that speed in that direction;
-    double getSpeed(){return speed;}
+    double getSpeed() const {return speed;}
     double change_speed(double s);
     int getX(){return coordinate_x;}
     int getY(){return coordinate_y;}
     void change_location(int& x,int& y);
     //change the robot location;
-    double getTheta(){return theta;}
+    double getTheta() const {return theta;}
     //get the robot direction
     double change_theta(double th);
     //change the robot direction
-    int getCount(){return count_robots;}
+    int getCount() const {return count_robots;}
     //count the robot numbers
     double robot_test_range(double r);
     //let the robot get a test of blocks range in the radius r
