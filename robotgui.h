@@ -1,3 +1,7 @@
+//***********************************************************************************
+//Author: Hanyu Zhang
+//Discription: this head file define the basic widget of GUI and a paint event.
+//***********************************************************************************
 #ifndef ROBOTGUI_H
 #define ROBOTGUI_H
 #include "datalayer.hh"
