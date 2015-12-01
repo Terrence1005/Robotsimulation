@@ -1,7 +1,7 @@
 #-------------------------------------------------
-#
 # Project created by QtCreator 2015-11-18T14:31:53
-#
+# Author: Hanyu Zhang
+# Discription: this is a configuration of GUI
 #-------------------------------------------------
 
 QT       += core gui
