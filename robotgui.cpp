@@ -1,3 +1,8 @@
+//***********************************************************************************
+//Author: Hanyu Zhang
+//Discription: This file define the details in user interface
+//***********************************************************************************
+
 #include "robotgui.h"
 #include "ui_robotgui.h"
 #include <QtWidgets>
@@ -11,13 +16,13 @@ RobotGui::RobotGui(QWidget *parent) :
 {
     ui->setupUi(this);
     QTimer *timer = new QTimer(this);
-    connect(timer, SIGNAL(timeout()),this,SLOT(update()));
-    timer->start(100);
+    connect(timer, SIGNAL(timeout()),this,SLOT(update()));                             //if timeout then run paintevent();
+    timer->start(100);                                                                 //set time as 100ms
 
-    setWindowTitle(tr("Robot Simulator"));
-    QSize mySize(myLayer.getLength()+200,myLayer.getWidth()+100);
+    setWindowTitle(tr("Robot Simulator"));                                             //define the title of the window
+    QSize mySize(myLayer.getLength()+200,myLayer.getWidth()+100);                      //define the size of the window
     this->resize(mySize);
-    ui->pushButton->setGeometry(myLayer.getLength()/2-40,myLayer.getWidth()+40,80,20);
+    ui->pushButton->setGeometry(myLayer.getLength()/2-40,myLayer.getWidth()+40,80,20); //layout widgets
     ui->label->setGeometry(myLayer.getLength()+5,5,70,20);
     ui->label1->setGeometry(myLayer.getLength()+5,30,70,20);
     ui->label2->setGeometry(myLayer.getLength()+5,55,70,20);
@@ -39,12 +44,12 @@ RobotGui::~RobotGui()
     delete ui;
 }
 
-void RobotGui::paintEvent(QPaintEvent *e){
+void RobotGui::paintEvent(QPaintEvent *e){                                               //painting;
     QPainter painter(this);
     QColor robotC(127,0,127);
     QColor boundC(127,127,0);
-    myLayer.loadData();
-    myLayer.clearData();
+    myLayer.loadData();                                                                  //load data to datalayer and check collision;
+    myLayer.clearData();                                                                 //clear datalayer;
     painter.setPen(boundC);
     painter.drawLine(0,0,myLayer.getLength(),0);
     painter.drawLine(0,0,0,myLayer.getWidth());
@@ -56,12 +61,12 @@ void RobotGui::paintEvent(QPaintEvent *e){
         painter.setBrush(robotC);
         painter.save();
         painter.drawEllipse(myCenter,robotList[i]->getRadius(),robotList[i]->getRadius());
-        robotList[i]->go();
+        robotList[i]->go();                                                               //robot move;
     }
 
 }
 
-void RobotGui::on_pushButton_clicked()
+void RobotGui::on_pushButton_clicked()                                                    //push button "New Robot" then add a new robot.
 {
     bool c=1;
     QString Speed = ui->lineEdit_1->text();
