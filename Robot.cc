@@ -1,3 +1,8 @@
+//*************************************************************************************************************
+//author: Hanyu Zhang
+//Discription: this cc file contains functions in robot.hh
+//*************************************************************************************************************
+
 #include "robot.hh"
 #include "datalayer.hh"
 #include <iostream>
@@ -40,6 +45,8 @@ double Robot::getRadius() const{return robotsize_radius;}
 double Robot::getAlert() const {return alert;}
 
 int Robot::getID() const {return ID;}
+
+//the capture funtion can record ID of other robots and boundary which are in the alert area of this robot.
 
 void Robot::capture(int n){
     bool exist=0;
@@ -112,6 +119,8 @@ void Robot::capture(int n){
     }
 }
 
+// add_trace function can caculate the new direction of this robot according to another captured robot`s direction.
+
 void Robot::add_trace(Robot* subject, Robot* object){
     int x=subject->coordinate_x-object->coordinate_x;
     int y=subject->coordinate_y-object->coordinate_y;
@@ -135,6 +144,8 @@ void Robot::add_trace(Robot* subject, Robot* object){
         }
     }
 }
+
+//the add_trace_bound funtion caculate the new direction of this robot if it rush into a boundary.
 
 void Robot::add_trace_bound(Robot* subject, int n){
     if(subject->theta<=180){
@@ -163,6 +174,8 @@ void Robot::add_trace_bound(Robot* subject, int n){
     }
 
 }
+
+//function go() will update new direction and new location of this robot.
 
 void Robot::go(){
     double newTheta;
