@@ -12,8 +12,7 @@ int Robot::count_robots = 0;
 
 Datalayer myLayer(400,400);
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]){
     QApplication a(argc, argv);
     RobotGui w;                                            //create GUI
 //  Robot* test=new Robot(1.0,300.0,300.0,45,10,10,0);
