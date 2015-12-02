@@ -29,7 +29,7 @@ double Robot::getX() const{return coordinate_x;}
 
 double Robot::getY() const{return coordinate_y;}
 
-void Robot::change_location(double x,double y){
+void Robot::change_location (double x,double y){
     coordinate_x=x;
     coordinate_y=y;
 }
