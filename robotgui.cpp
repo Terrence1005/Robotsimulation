@@ -37,6 +37,14 @@ RobotGui::RobotGui(QWidget *parent) :
     ui->lineEdit_4->setGeometry(myLayer.getLength()+80,105,70,20);
     ui->lineEdit_5->setGeometry(myLayer.getLength()+80,130,70,20);
     ui->lineEdit_6->setGeometry(myLayer.getLength()+80,155,70,20);
+    ui->label_2->setGeometry(myLayer.getLength()+5,200,52,20);
+    ui->lineEdit_7->setGeometry(myLayer.getLength()+80,200,50,20);
+    ui->label_3->setGeometry(myLayer.getLength()+5,225,52,20);
+    ui->label_4->setGeometry(myLayer.getLength()+80,225,120,20);
+    ui->label_5->setGeometry(myLayer.getLength()+5,250,52,20);
+    ui->label_6->setGeometry(myLayer.getLength()+80,250,70,20);
+    ui->label_7->setGeometry(myLayer.getLength()+5,275,52,20);
+    ui->label_8->setGeometry(myLayer.getLength()+80,275,70,20);
 }
 
 RobotGui::~RobotGui()
@@ -85,4 +93,18 @@ void RobotGui::on_pushButton_clicked()                                          
     int id = ID.toInt(&c,10);
     Robot* newRobot = new Robot(speed, x, y, theta, radius, alert, id);
     robotList.push_back(newRobot);
+}
+
+void RobotGui::on_pushButton_2_clicked()
+{
+    bool c=1;
+    QString ID = ui->lineEdit->text();
+    unsigned int id = ID.toInt(&c,10);
+    if(id>=robotList.size()) return;
+    QString location='('+QString::number(robotList[id]->getX(),'g',6)+','+QString::number(robotList[id]->getY(),'g',6)+')';
+    ui->label_4->setText(location);
+    QString speed=QString::number(robotList[id]->getSpeed(),'g',6);
+    ui->label_6->setText(speed);
+    QString degree=QString::number(robotList[id]->getTheta(),'g',6);
+    ui->label_8->setText(degree);
 }
