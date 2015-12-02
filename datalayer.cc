@@ -1,5 +1,5 @@
 //*****************************************************************************
-//Author: Hanyu Zhang
+//Author: Hanyu Zhang, Xiaotian Zhang, Runji Hu
 //Discription: Complete methods in datalayer.hh 
 //*****************************************************************************
 
