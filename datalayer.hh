@@ -1,5 +1,5 @@
 //****************************************************************************************
-//Author: Hanyu Zhang, Xiaotian Zhang, Runji HU
+//Author: Hanyu Zhang, Xiaotian Zhang, Runji Hu
 //Discription: this file Define a logic layer of playground for robots to run 
 //****************************************************************************************
 #ifndef DATALAYER_HH
