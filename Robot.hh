@@ -32,7 +32,7 @@ private:
     double coordinate_y;                                             //location in the coordinate x,y;
     double theta;                                                    //set north as degree 0;
     double robotsize_radius;                                         //set robot as a circle;
-    double alert;                                                    //set the alert area;
+    double alert;                                                    //set the alert range;
     vector<Telecom> communication;                                   //A vector to record Telecom structure;
     vector<double> trace;                                            //A vector to record new directions of this robot; 
     static int count_robots;                                         //How many robots in this place;
