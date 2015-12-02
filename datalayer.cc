@@ -27,7 +27,8 @@ Datalayer::Datalayer(int l, int w):length(l),width(w){
             layer[j][i]=0;
 }
 
-Datalayer::~Datalayer(){
+Datalayer::~Datalayer()
+{
     delete [] layer;
 }
 
