@@ -7,7 +7,7 @@ Robots in this program don`t have a destination, it will keep moving all the tim
 
 Perhaps there are some bugs in these program, but we are tring to fix them. 
 
-The GUI part in this program is written by QT5.
+This program is written in Unbuntu 14 and the GUI part in this program is written with QT5.
 
 12/01/2015
 Hanyu Zhang
