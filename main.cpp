@@ -1,5 +1,5 @@
 //***********************************************************************************
-//author: Hanyu Zhang, Xiaotian Zhang, Runji Hu
+//author: Hanyu Zhang
 //Discription:Main function of robotsimulator
 //***********************************************************************************
 
