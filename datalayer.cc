@@ -64,7 +64,7 @@ void Datalayer::clearData(){
 
 //loadData() can estimate whether the alert area of the current robot will overlap others` alert areas.
 //If it does, this mathod will call Robot::capture to capture the information of other robots. 
-
+//written by Hanyu Zhang
 void Datalayer::loadData(){
     for(auto i=robotList.begin();i<robotList.end();i++){
         vector<int> detect;
