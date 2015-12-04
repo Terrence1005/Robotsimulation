@@ -1,0 +1,6 @@
+Operation Outlines
+In the final interface, there are some matters need attention. The Robot ID should be created one by one beginning with 1.
+And the speed should be better between 1 to 8. 
+The location of coordinate X and coordinate Y should be between 0 and 400. But here is an important matter that when you
+decide the size of the robot the radius plus X or Y should both be less than 400 or it would be out of bound.
+The radius are recommended between 1 to 40 and the alert range should be larger than the radius and less than 80.
