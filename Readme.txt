@@ -30,3 +30,6 @@ https://drive.google.com/folderview?id=0B0pguEOor8oBbDBtZl9uQlZHYU0&usp=sharing
 
 Note: You must use chmod -R 777 "your path"/Robotsimulation/ to make sure you have authority to run this program. After doing that, you can enter /Robotsimulation and run RobotGui using ./RobotGui
 
+If users have any problem please contact with me via E-mail:
+
+hzhang55@stevens.edu
