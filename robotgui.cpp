@@ -22,7 +22,8 @@ RobotGui::RobotGui(QWidget *parent) :
     setWindowTitle(tr("Robot Simulator"));                                             //define the title of the window
     QSize mySize(myLayer.getLength()+200,myLayer.getWidth()+100);                      //define the size of the window
     this->resize(mySize);
-    ui->pushButton->setGeometry(myLayer.getLength()/2-40,myLayer.getWidth()+40,80,20); //layout widgets
+    ui->pushButton->setGeometry(myLayer.getLength()/2-120,myLayer.getWidth()+40,80,20);
+    ui->pushButton_2->setGeometry(myLayer.getLength()/2+40,myLayer.getWidth()+40,80,20); //layout widgets
     ui->label->setGeometry(myLayer.getLength()+5,5,70,20);
     ui->label1->setGeometry(myLayer.getLength()+5,30,70,20);
     ui->label2->setGeometry(myLayer.getLength()+5,55,70,20);
