@@ -80,7 +80,7 @@ void Datalayer::loadData(){
                     int j;
                     for(j=0; j<detect.size();j++)
                     {
-                        if(layer[y][x]==detect[j]) break;
+                        if(layer[y][x]/10==detect[j]) break;
                     }
                     if(j==detect.size()){
                         (*i)->capture(layer[y][x]/10);
