@@ -1,5 +1,5 @@
 Robotsimulator 1.0
-Change log:
+Change Log:
 
 This is a robotsimulation project can show user traces of robots` movement. User can add new robots into the playground. Robots in the playground cannot collision with others or walls. Robots in this program have priorities, elder robots will not give a way to latter robots.
 
@@ -12,16 +12,16 @@ This program is written in Unbuntu 14 and the GUI part in this program is writte
 12/01/2015
 Hanyu Zhang
 
-----------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
 Robotsimulator 1.1
-Change log:
+Change Log:
 
 We added monitor funtion in GUI and it can show the status of robot including location, speed, direction.
 
 12/02/2015
-
+--------------------------------------------------------------------------------------------------------------------------------------
 Robotsimulator 1.2
-Change log:
+Change Log:
 
 we make this program can be runned in other Linux system without Qt environment.
 copy the link below, and you will get the package of this program.
@@ -33,3 +33,14 @@ Note: You must use chmod -R 777 "your path"/Robotsimulation/ to make sure you ha
 If users have any problem please contact with me via E-mail:
 
 hzhang55@stevens.edu
+
+12/04/2015
+--------------------------------------------------------------------------------------------------------------------------------------
+
+Robotsimulator 1.3
+change Log:
+
+Fixed some robot collison bugs and changed the vector degree caculation method.
+
+Hanyu Zhang
+08/12/2015
