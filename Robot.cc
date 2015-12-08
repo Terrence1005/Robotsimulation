@@ -91,6 +91,7 @@ void Robot::capture(int n){
             object->number=n;
             object->distance=sqrt((robotList[n]->coordinate_x-coordinate_x)*(robotList[n]->coordinate_x-coordinate_x)+
                                 (robotList[n]->coordinate_y-coordinate_y)*(robotList[n]->coordinate_y-coordinate_y));
+            communication.push_back(*object);
             Robot::add_trace(this, robotList[n]);
         }
         else{
@@ -114,6 +115,7 @@ void Robot::capture(int n){
                 break;
             }
             object->distance=newDistance;
+            communication.push_back(*object);
             Robot::add_trace_bound(this, n);
         }
     }
@@ -124,7 +126,8 @@ void Robot::capture(int n){
 void Robot::add_trace(Robot* subject, Robot* object){
     int x=subject->coordinate_x-object->coordinate_x;
     int y=subject->coordinate_y-object->coordinate_y;
-    double thetaVector=atan2(x,y);                                   //defination of atan2
+    double thetaVector = 90 - atan2(y, x) * 180 / PI;                                   //defination of atan2
+	if (thetaVector < 0) thetaVector += 360;
     if(object->theta<180){
         if(thetaVector>object->theta && thetaVector<object->theta+180)
             subject->trace.push_back(object->getTheta()+90);
