@@ -55,8 +55,11 @@ RobotGui::~RobotGui()
 
 void RobotGui::paintEvent(QPaintEvent *e){                                               //painting;
     QPainter painter(this);
+    QPainter painter2(this);
+    painter.setRenderHint(QPainter::Antialiasing);                                       //antialiasing
     QColor robotC(127,0,127);
     QColor boundC(127,127,0);
+    QColor AlertC(0,127,127);
     myLayer.loadData();                                                                  //load data to datalayer and check collision;
     myLayer.clearData();                                                                 //clear datalayer;
     painter.setPen(boundC);
@@ -66,6 +69,9 @@ void RobotGui::paintEvent(QPaintEvent *e){                                      
     painter.drawLine(0,myLayer.getWidth(),myLayer.getLength(),myLayer.getWidth());
     for(int i=0; i<robotList.size();i++){
         QPoint myCenter(robotList[i]->getX(),robotList[i]->getY());
+        painter2.setPen(AlertC);
+        painter2.save();
+        painter2.drawEllipse(myCenter,robotList[i]->getAlert(),robotList[i]->getAlert());
         painter.setPen(Qt::NoPen);
         painter.setBrush(robotC);
         painter.save();
