@@ -26,7 +26,7 @@ Change Log:
 we make this program can be runned in other Linux system without Qt environment.
 copy the link below, and you will get the package of this program.
 
-https://drive.google.com/folderview?id=0B0pguEOor8oBbDBtZl9uQlZHYU0&usp=sharing
+https://drive.google.com/folderview?id=0B0pguEOor8oBV3g3X2FscXRVMGs&usp=sharing
 
 Note: You must use chmod -R 777 "your path"/Robotsimulation/ to make sure you have authority to run this program. After doing that, you can enter /Robotsimulation and run RobotGui using ./RobotGui
 
