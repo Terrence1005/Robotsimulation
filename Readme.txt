@@ -41,6 +41,7 @@ Robotsimulator 1.3
 change Log:
 
 Fixed some robot collison bugs and changed the vector degree caculation method.
+Add a function that user can see the alert area.
 
 Hanyu Zhang
 08/12/2015
