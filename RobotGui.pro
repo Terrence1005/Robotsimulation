@@ -14,11 +14,11 @@ CONFIG += c++11
 
 SOURCES += main.cpp\
         robotgui.cpp \
-    robot.cc \
+    Robot.cc \
     datalayer.cc
 
 HEADERS  += robotgui.h \
-    robot.hh \
+    Robot.hh \
     datalayer.hh
 
 FORMS    += robotgui.ui
