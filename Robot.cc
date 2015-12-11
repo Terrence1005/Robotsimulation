@@ -3,7 +3,7 @@
 //Discription: this cc file contains functions in robot.hh
 //*************************************************************************************************************
 
-#include "robot.hh"
+#include "Robot.hh"
 #include "datalayer.hh"
 #include <iostream>
 #include <cmath>
