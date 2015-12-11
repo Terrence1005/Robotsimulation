@@ -5,7 +5,7 @@
 #ifndef DATALAYER_HH
 #define DATALAYER_HH
 
-#include "robot.hh"
+#include "Robot.hh"
 #include <math.h>
 
 //The class Datalayer makes a logic layer to record robots` locations, radiuses, alert area.
